@@ -1,0 +1,18 @@
+＃新しい環境の作成、[]は任意で作成
+mkdir [project name]
+cd [testvenv]
+
+#GitForDesktopから開いたらここから
+python3 -m venv venv
+
+＃仮想環境ON
+source venv/bin/activate
+
+＃仮想環境OFF
+deactivate
+
+＃パッケージ一覧をrequirements.txtに保存
+pip freeze > requirements.txt
+
+＃requirements.txtのパッケージをインストール
+pip install -r requirements.txt
